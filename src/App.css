@@ -1,17 +1,21 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --color-brand-blue: #00AEEF;
-  --color-brand-dark-blue: #00539F;
-  --font-maersk: "Maersk Text", "Helvetica Neue", Arial, sans-serif;
-}
+@layer base {
+  :root {
+    --color-brand-blue: #00AEEF;
+    --color-brand-dark-blue: #00539F;
+    --font-maersk: "Maersk Text", "Helvetica Neue", Arial, sans-serif;
+  }
 
-body {
-  @apply bg-slate-50 text-slate-900;
-  font-family: var(--font-maersk);
-}
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: var(--font-maersk);
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply font-bold;
-  color: var(--color-brand-dark-blue);
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+    color: var(--color-brand-dark-blue);
+  }
 }
