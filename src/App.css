@@ -4,22 +4,20 @@
 
 @layer base {
   :root {
-    --color-brand-blue: #00AEEF;
-    --color-brand-dark-blue: #00539F;
+    --color-brand-blue: #00539F;
+    --color-brand-light-blue: #00AEEF;
     --font-maersk: "Maersk Text", "Helvetica Neue", Arial, sans-serif;
   }
 
   body {
-    background-color: #f8fafc; /* bg-slate-50 */
-    color: #0f172a; /* text-slate-900 */
+    background-color: #f8fafc;
+    color: #0f172a;
     font-family: var(--font-maersk);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.25;
-    color: var(--color-brand-dark-blue);
-  }
+.premium-shadow {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
 }
